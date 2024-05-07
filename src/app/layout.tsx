@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { fontSans } from "@/config/fonts";
+import clsx from "clsx";
 
 import { siteConfig } from '@/config';  
 
@@ -36,8 +37,6 @@ export const metadata: Metadata = {
   }
 };
 
-const inter = Inter({ subsets: ['latin'] });
-
 export default function RootLayout({
   children
 }: {
@@ -45,11 +44,18 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html suppressHydrationWarning lang="en">
-        <body className={`${inter.className} w-full bg-primary`}>
-          <Layout>
-            <main className="pt-28">{children}</main>
-          </Layout>
+      <html suppressHydrationWarning lang="pt-BR" className="[color-scheme:dark]">
+      <body className={clsx(
+					"min-h-screen bg-background font-sans antialiased bg-gray-900 overflow-y-scroll bg-[url('/grid.svg')] pb-36",
+					fontSans.variable
+				)}>
+          <div className="max-w-8xl mx-auto space-y-8 px-2 lg:p-8">
+          <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
+              <div className="rounded-lg bg-zinc-950 p-3.5 lg:p-6"> 
+              {children}
+            </div>
+          </div>
+        </div>
         </body>
       </html>
     </>

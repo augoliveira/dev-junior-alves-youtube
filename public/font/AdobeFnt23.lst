@@ -1,0 +1,28 @@
+%!Adobe-FontList 1.23
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:CircularStd-Medium
+FamilyName:Circular Std
+StyleName:Medium
+FullName:Circular Std Medium
+MenuName:Circular Std Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\aug_o\Documents\GitHub\glazingdesign-main\public\Font\circular-std.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:86456
+FileModTime:1705406128
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Circular Std Medium
+NameArray:0,Win,1,Circular Std Medium
+NameArray:0,Win,16,Circular Std
+%EndFont
+
