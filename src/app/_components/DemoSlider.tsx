@@ -68,7 +68,7 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data }) => {
                   <BlurImage
                     alt="Mountains"
                     src={image}
-                    className="-z-10 object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     fill
                   />
                 </div>
