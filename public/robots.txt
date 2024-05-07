@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://127.0.0.1:3000
+Host: https://glazingdesign.com.br
 
 # Sitemaps
-Sitemap: http://127.0.0.1:3000/sitemap.xml
+Sitemap: https://glazingdesign.com.br/sitemap.xml
