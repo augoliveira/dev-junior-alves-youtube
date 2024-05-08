@@ -69,20 +69,18 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data, ...props }) => {
                 <div
                   className="col-span-4 place-self-center mt-8 lg:mt-0"
                 >
-                  <figure>
                   <Image
-                    objectFit="cover"
                     src={image}
                     alt=""
+                    placeholder='blur'
+                    blurDataURL='data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]'
+                    quality={100}
                     fill
-                    sizes="(min-width: 1024px) 80vw, 100vw"
-                    className={`absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center bg-gray-400 transition duration-1000 ${
-                      isReady ? "blur-0 scale-100" : "blur-2xl scale-120"
-                    }`}
-                    {...props}
-                    onLoadingComplete={onLoadCallback}
+                    sizes="100vw"
+                    style={{
+                      objectFit: "cover",
+                    }}
                   />
-                  </figure>
                 </div>
                 
           

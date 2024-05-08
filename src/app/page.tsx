@@ -2,12 +2,8 @@
 import React from "react";
 import { SparklesCore } from "../ui/sparkles";
 import dynamic from 'next/dynamic';
+import DemoSlider from "./_components/DemoSlider";
 import dataSlider from "./_data/slider-data.json";
-
-const DemoSlider = dynamic(() => import('./_components/DemoSlider'), {
-  ssr: false
-});
-
 
 
 export default async function HomePage() {
