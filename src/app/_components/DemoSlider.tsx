@@ -2,8 +2,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"; // <===== REQUIRED
 
-import Image from "next/image";
-import React from "react";
+import NextImage from "next/image";
+import React, { useState } from "react";
 
 import { motion } from 'framer-motion';
 
@@ -42,7 +42,12 @@ interface DemoSliderProps {
   data: Slide[];
 }
 
-const DemoSlider: React.FC<DemoSliderProps> = ({ data }) => {
+const DemoSlider: React.FC<DemoSliderProps> = ({ data, ...props }) => {
+  const [isReady, setIsReady] = useState(false);
+
+  const onLoadCallback = () => {
+    setIsReady(true);
+  };
   return (
     <section className="min-h-[760px]">
         <div className="continer mx-auto h-[760px]">
@@ -65,12 +70,16 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data }) => {
                 <div
                   className="col-span-4 place-self-center mt-8 lg:mt-0"
                 >
-                  <BlurImage
-                    alt="Mountains"
-                    src={image}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    fill
-                  />
+                  <NextImage
+      objectFit="cover"
+      src={image}
+      className={`bg-gray-400 transition duration-1000 ${
+        isReady ? "blur-0 scale-100" : "blur-2xl scale-120"
+      }`}
+      {...props}
+      onLoadingComplete={onLoadCallback}
+      fill
+    />
                 </div>
                 
           
