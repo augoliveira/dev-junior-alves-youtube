@@ -34,6 +34,9 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.5",
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "@vercel/postgres": "^0.8.0",
     "autoprefixer": "10.4.19",
     "clsx": "^2.1.1",
