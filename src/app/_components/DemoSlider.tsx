@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"; // <===== REQUIRED
 
-import NextImage from "next/image";
+import Image from "next/image";
 import React, { useState } from "react";
 
 import { motion } from 'framer-motion';
@@ -70,7 +70,7 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data, ...props }) => {
                 <div
                   className="col-span-4 place-self-center mt-8 lg:mt-0"
                 >
-                  <NextImage
+                  <Image
       objectFit="cover"
       src={image}
       className={`bg-gray-400 transition duration-1000 ${
