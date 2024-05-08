@@ -2,14 +2,11 @@
 import React from "react";
 import { SparklesCore } from "../ui/sparkles";
 import dynamic from 'next/dynamic';
-import DemoSlider from "./_components/DemoSlider";
-import dataSlider from "./_data/slider-data.json";
 
 
 export default async function HomePage() {
   return (
     <>
-    <DemoSlider data={dataSlider} />
     <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
         Aceternity
