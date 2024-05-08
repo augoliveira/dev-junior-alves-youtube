@@ -69,25 +69,30 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data, ...props }) => {
                 <div
                   className="col-span-4 place-self-center mt-8 lg:mt-0"
                 >
+                  <figure>
                   <Image
                     objectFit="cover"
                     src={image}
                     alt=""
-                    className={`bg-gray-400 transition duration-1000 ${
+                    width={1500}
+                    height={750}
+                    crop="fill"
+                    sizes="(min-width: 1024px) 80vw, 100vw"
+                    className={`absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center bg-gray-400 transition duration-1000 ${
                       isReady ? "blur-0 scale-100" : "blur-2xl scale-120"
                     }`}
                     {...props}
                     onLoadingComplete={onLoadCallback}
-                    fill
                   />
+                  </figure>
                 </div>
                 
           
-                <div className="absolute left-0 top-0 h-full w-full bg-black/20 opacity-20"></div>
-                <div className="space-y-5 title-content absolute py-[8%] px-16 sm:py-[8rem] left-3">
-                  <div className="flex flex-col gap-y-5 px-8 lg:px-8 md:flex-row md:gap-x-16">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-black/20 opacity-20"></div>
+                <div className="space-y-5 title-content absolute py-[8%] ps-16 sm:py-[8rem]">
+                  <div className="flex flex-col gap-y-5 lg:px-16 md:flex-row md:gap-x-16">
                   <div className="mr-auto place-self-center lg:col-span-7">
-                  <div className="text-left backdrop-brightness-50 bg-black/50 py-16 px-16 rounded-md">
+                  <div className="text-left backdrop-brightness-50 bg-black/50 py-16 px-8 rounded-md">
                     <motion.div
                       initial={{ y: 10, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
