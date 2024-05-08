@@ -74,9 +74,7 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data, ...props }) => {
                     objectFit="cover"
                     src={image}
                     alt=""
-                    width={1500}
-                    height={750}
-                    crop="fill"
+                    fill
                     sizes="(min-width: 1024px) 80vw, 100vw"
                     className={`absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center bg-gray-400 transition duration-1000 ${
                       isReady ? "blur-0 scale-100" : "blur-2xl scale-120"
