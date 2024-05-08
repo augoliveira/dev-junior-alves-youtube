@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://example.com/robots.txt</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/sitemap.xml</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/portas-e-janelas/blog</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/Vidro-laminado/subscribers</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/quem-somos</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/portas-e-janelas/checkout</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/Vidro-laminado/impressions</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/quem-somos/1</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/quem-somos/2</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/contato</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/portas-e-janelas</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/Vidro-laminado/demographics</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/Vidro-laminado</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/Vidro-laminado/view-duration</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://example.com/box-para-banheiro</loc><lastmod>2024-05-06T23:20:37.456Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://glazingdesign.com.br/sitemap.xml</loc><lastmod>2024-05-08T12:04:51.966Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://glazingdesign.com.br/robots.txt</loc><lastmod>2024-05-08T12:04:51.967Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://glazingdesign.com.br</loc><lastmod>2024-05-08T12:04:51.967Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
