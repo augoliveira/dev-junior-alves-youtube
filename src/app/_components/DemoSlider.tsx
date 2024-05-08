@@ -12,7 +12,6 @@ import { motion } from 'framer-motion';
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Img from '/public/banner1.png';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -70,7 +69,7 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data, ...props }) => {
                 <div
                   className="col-span-4 place-self-center mt-8 lg:mt-0"
                 >
-                  <Image
+                  <BlurImage
       objectFit="cover"
       src={image}
       className={`bg-gray-400 transition duration-1000 ${
