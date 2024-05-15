@@ -6,11 +6,13 @@
     },
     "extends": [
       "eslint:recommended",
+      "next/core-web-vitals",
       "plugin:sonarjs/recommended",
       "plugin:react/recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:prettier/recommended"
     ],
+    "@next/next/no-img-element": "off",
     "settings": {
       "react": {
         "version": "detect"

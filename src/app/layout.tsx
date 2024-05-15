@@ -4,6 +4,8 @@ import { Inter as FontSans } from 'next/font/google';
 import localFont from 'next/font/local';
 import { cn } from '@/lib/utils';
 import clsx from "clsx";
+import CustomCursor from '@/ui/Cursor';
+import { AddressBar } from '@/ui/address-bar';
 
 import { siteConfig } from '@/config';  
 
@@ -101,16 +103,24 @@ export default function RootLayout({
     <>
       <html suppressHydrationWarning lang="pt-BR" className="[color-scheme:dark]">
       <body className={clsx(
-					"min-h-screen bg-background font-sans antialiased bg-gray-900 overflow-y-scroll bg-[url('/grid.svg')] pb-36",
+					"min-h-screen bg-background font-sans antialiased bg-gray-900 overflow-y-scroll bg-hero-image bg-cover bg-center bg-no-repeat pb-36",
 					fontSans.variable
 				)}>
-          <div className="max-w-8xl mx-auto space-y-8 px-2 lg:p-8">
-          <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-zinc-950 p-3.5 lg:p-6"> 
-              {children}
-            </div>
-          </div>
-        </div>
+            <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
+                        <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
+                          <div className="rounded-t-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
+                              <div className="rounded-t-lg bg-gradient-to-r from-bodyColor to-[#66a900]">
+                                  <AddressBar />
+                              </div>
+                          </div>
+                              {children}
+                            <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
+                              <div className="rounded-lg bg-black/30 backdrop-blur-xl">
+                                  
+                              </div> 
+                            </div> 
+                        </div>
+                      </div>
         </body>
       </html>
     </>
